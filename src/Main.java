@@ -34,7 +34,7 @@ public class Main {
                 Double amountToConvert = keyboard.nextDouble();
 
                 //Making the request and getting the response
-                String URL = "https://v6.exchangerate-api.com/v6/9c7615a80490188deefdf178/latest/" + initialCurrencyCode.replace(" ", "");
+                String URL = "https://v6.exchangerate-api.com/v6/<API_KEY>/latest/" + initialCurrencyCode.replace(" ", "");
                 RequestAndResponse requestAndResponse = new RequestAndResponse(URL);
                 String json = requestAndResponse.responseToRequest();
 
