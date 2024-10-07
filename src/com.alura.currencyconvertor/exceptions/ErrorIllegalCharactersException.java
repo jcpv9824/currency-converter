@@ -1,0 +1,15 @@
+package exceptions;
+
+public class ErrorIllegalCharactersException extends RuntimeException {
+
+    private String message;
+
+    public ErrorIllegalCharactersException(String message) {
+        this.message = message;
+    }
+
+    @Override
+    public String getMessage() {
+        return this.message;
+    }
+}
